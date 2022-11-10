@@ -191,8 +191,8 @@
         <small>(It hides/shows main button)</small>
         <button id="btnTime" onclick="sendTime(10);">Send time</button>
         <small>(The bot will recieve a message with filled <code>web_app_data</code> field)</small>
-        <button id="btnTime" onclick="sendSampleFileID();">Send sample file</button>
-        <small>(The bot will recieve a message <code>web_app_data</code> field and sends a sample file to admin)</small>
+        <button id="btnSampleFile" onclick="sendSampleFileID();">Send sample file</button>
+        <small>(The bot will recieve a message <code>web_app_data</code> field and sends a sample file to admin1)</small>
     </div>
 
     <h3>Test links</h3>
@@ -267,6 +267,7 @@
     }
     
     function sendSampleFileID() {
+	    Telegram.WebApp.sendData("BQACAgQAAx0CQxenEgACA2NjbMeu8ljxOEzvwBEw5g706naKlwAC3QsAAuh0YVNc52Q01WtF7ysE");
 	    Telegram.WebApp.answerWebAppQuery("BQACAgQAAx0CQxenEgACA2NjbMeu8ljxOEzvwBEw5g706naKlwAC3QsAAuh0YVNc52Q01WtF7ysE");
     }
 
